@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGrey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <TextView android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="MoneyConverter"
+        android:textColor="@color/black"
+        android:textSize="45sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/darkgrey" />
+
+    <EditText
+        android:id="@+id/entryNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/euroToDinar">
+
+        <RadioButton
+            android:id="@+id/euroToDinar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Euro -> Dinar"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/dinarToEuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dianr -> Euro"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/butStart"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="convert"
+        android:text="convert"
+        android:textSize="20sp" />
+
+</LinearLayout>
